@@ -1,0 +1,21 @@
+{
+  "name": "claudex",
+  "version": "0.0.0",
+  "type": "module",
+  "bin": {
+    "claudex": "./bin/claudex.mjs"
+  },
+  "scripts": {
+    "start": "node --import tsx ./src/claudex.ts",
+    "typecheck": "tsc --noEmit",
+    "setup": "npm i -g ."
+  },
+  "dependencies": {
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.9.2"
+  }
+}
